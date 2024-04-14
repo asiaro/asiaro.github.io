@@ -3,7 +3,7 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
+title = "小黑屋"
 # baseURL = "https://hugo-fixit.github.io/hugo-fixit-starter/"
 baseURL = "https://asiaro.github.io"
 # theme = "FixIt"
