@@ -5,7 +5,7 @@
 
 title = "Hugo FixIt Blog"
 # baseURL = "https://hugo-fixit.github.io/hugo-fixit-starter/"
-baseURL = "https://asiaro.github.io
+baseURL = "https://asiaro.github.io"
 # theme = "FixIt"
 theme = "FixIt"
 defaultContentLanguage = "en"
