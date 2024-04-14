@@ -10,7 +10,7 @@ code:
   maxShownLines: 11
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---
-
+<!-- 
 Welcome to Hugo FixIt! This is your very first post.
 
 <!--more-->
@@ -88,4 +88,7 @@ hugo mod tidy
 
 Whether it's questions, ideas, bugs or pull requests, all feedback is welcome!
 
-Head over to the [issues](https://github.com/hugo-fixit/FixIt/issues) or [discussions](https://github.com/hugo-fixit/FixIt/discussions) tracker.
+Head over to the [issues](https://github.com/hugo-fixit/FixIt/issues) or [discussions](https://github.com/hugo-fixit/FixIt/discussions) tracker. -->
+
+
+测试
