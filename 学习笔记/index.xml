@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>All 学习笔记 - 小黑屋</title><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link><description>小黑屋哦！</description><generator>Hugo 0.138.0 &amp; FixIt v0.3.15</generator><language>en</language><managingEditor>1024@lruihao.cn (Lruihao)</managingEditor><webMaster>1024@lruihao.cn (Lruihao)</webMaster><lastBuildDate>Mon, 18 Nov 2024 01:47:17 +0000</lastBuildDate><atom:link href="https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pydantic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pydantic/</guid><description/></item><item><title/><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/sqlalchemy-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/sqlalchemy-2/</guid><description>&lt;h2 id="快速入门" class="heading-element">&lt;span>快速入门&lt;/span>
+ &lt;a href="#%e5%bf%ab%e9%80%9f%e5%85%a5%e9%97%a8" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h2 id="模型声明" class="heading-element">&lt;span>模型声明&lt;/span>
+ &lt;a href="#%e6%a8%a1%e5%9e%8b%e5%a3%b0%e6%98%8e" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">typing&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">List&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">typing&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Optional&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">ForeignKey&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">String&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy.orm&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">DeclarativeBase&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy.orm&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Mapped&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy.orm&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">mapped_column&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy.orm&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">relationship&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Base&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">DeclarativeBase&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">pass&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">User&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Base&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">__tablename__&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;user_account&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mapped_column&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">primary_key&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">name&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">str&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mapped_column&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">30&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fullname&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">Optional&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">str&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">addresses&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">List&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;Address&amp;#34;&lt;/span>&lt;span class="p">]]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">relationship&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">back_populates&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;user&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">cascade&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;all, delete-orphan&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__repr__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;User(id=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">id&lt;/span>&lt;span class="si">!r}&lt;/span>&lt;span class="s2">, name=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="si">!r}&lt;/span>&lt;span class="s2">, fullname=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">fullname&lt;/span>&lt;span class="si">!r}&lt;/span>&lt;span class="s2">)&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">class&lt;/span> &lt;span class="nc">Address&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Base&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">__tablename__&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;address&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mapped_column&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">primary_key&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">email_address&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">str&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">user_id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">mapped_column&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ForeignKey&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;user_account.id&amp;#34;&lt;/span>&lt;span class="p">))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">user&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Mapped&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;User&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">relationship&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">back_populates&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;addresses&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">def&lt;/span> &lt;span class="fm">__repr__&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="nb">str&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="sa">f&lt;/span>&lt;span class="s2">&amp;#34;Address(id=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">id&lt;/span>&lt;span class="si">!r}&lt;/span>&lt;span class="s2">, email_address=&lt;/span>&lt;span class="si">{&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">email_address&lt;/span>&lt;span class="si">!r}&lt;/span>&lt;span class="s2">)&amp;#34;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="创建引擎" class="heading-element">&lt;span>创建引擎&lt;/span>
+ &lt;a href="#%e5%88%9b%e5%bb%ba%e5%bc%95%e6%93%8e" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">create_engine&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">engine&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">create_engine&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;sqlite://&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">echo&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="kc">True&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="创建表结构" class="heading-element">&lt;span>创建表结构&lt;/span>
+ &lt;a href="#%e5%88%9b%e5%bb%ba%e8%a1%a8%e7%bb%93%e6%9e%84" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">Base&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">metadata&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">create_all&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">engine&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="创建对象并持久化" class="heading-element">&lt;span>创建对象并持久化&lt;/span>
+ &lt;a href="#%e5%88%9b%e5%bb%ba%e5%af%b9%e8%b1%a1%e5%b9%b6%e6%8c%81%e4%b9%85%e5%8c%96" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy.orm&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Session&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">with&lt;/span> &lt;span class="n">Session&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">engine&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="n">session&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">spongebob&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">User&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;spongebob&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fullname&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;Spongebob Squarepants&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">addresses&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">Address&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">email_address&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;spongebob@sqlalchemy.org&amp;#34;&lt;/span>&lt;span class="p">)],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sandy&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">User&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;sandy&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">fullname&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;Sandy Cheeks&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">addresses&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Address&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">email_address&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;sandy@sqlalchemy.org&amp;#34;&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Address&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">email_address&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;sandy@squirrelpower.org&amp;#34;&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">patrick&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">User&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;patrick&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">fullname&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;Patrick Star&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">add_all&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="n">spongebob&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">sandy&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">patrick&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="c1"># 添加多个提交&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">commit&lt;/span>&lt;span class="p">()&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="简单搜索" class="heading-element">&lt;span>简单搜索&lt;/span>
+ &lt;a href="#%e7%ae%80%e5%8d%95%e6%90%9c%e7%b4%a2" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">sqlalchemy&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">select&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">session&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">Session&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">engine&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">stmt&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">User&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">where&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">User&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">in_&lt;/span>&lt;span class="p">([&lt;/span>&lt;span class="s2">&amp;#34;spongebob&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;sandy&amp;#34;&lt;/span>&lt;span class="p">]))&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span> &lt;span class="n">user&lt;/span> &lt;span class="ow">in&lt;/span> &lt;span class="n">session&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">scalars&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">stmt&lt;/span>&lt;span class="p">):&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">user&lt;/span>&lt;span class="p">)&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>ai</title><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/gorm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/gorm/</guid><category domain="https://asiaro.github.io/categories/%E5%AD%A6%E4%B9%A0/">学习</category><category domain="https://asiaro.github.io/categories/ai/">Ai</category><category domain="https://asiaro.github.io/categories/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/">图像识别</category><description>&lt;p>&lt;a href="https://juejin.cn/column/7290751135904038953"target="_blank" rel="external nofollow noopener noreferrer">基于LangChain的LLM应用开发 - 西滨技术随想的专栏 - 掘金 (juejin.cn)&lt;/a>&lt;/p></description></item><item><title>ai</title><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/langchain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/langchain/</guid><category domain="https://asiaro.github.io/categories/%E5%AD%A6%E4%B9%A0/">学习</category><category domain="https://asiaro.github.io/categories/ai/">Ai</category><category domain="https://asiaro.github.io/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B/">大模型</category><description>&lt;p>&lt;a href="https://juejin.cn/column/7290751135904038953"target="_blank" rel="external nofollow noopener noreferrer">基于LangChain的LLM应用开发 - 西滨技术随想的专栏 - 掘金 (juejin.cn)&lt;/a>&lt;/p></description></item><item><title>ai</title><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/yolo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/yolo/</guid><category domain="https://asiaro.github.io/categories/%E5%AD%A6%E4%B9%A0/">学习</category><category domain="https://asiaro.github.io/categories/ai/">Ai</category><category domain="https://asiaro.github.io/categories/%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/">图像识别</category><description>&lt;p>&lt;a href="https://juejin.cn/column/7290751135904038953"target="_blank" rel="external nofollow noopener noreferrer">基于LangChain的LLM应用开发 - 西滨技术随想的专栏 - 掘金 (juejin.cn)&lt;/a>&lt;/p></description></item><item><title>ai</title><link>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AD%A6%E4%B9%A0%E5%8A%9F%E8%83%BD%E5%88%86%E7%B1%BB/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1024@lruihao.cn (Lruihao)</author><guid>https://asiaro.github.io/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AD%A6%E4%B9%A0%E5%8A%9F%E8%83%BD%E5%88%86%E7%B1%BB/</guid><category domain="https://asiaro.github.io/categories/%E5%AD%A6%E4%B9%A0/">学习</category><category domain="https://asiaro.github.io/categories/ai/">Ai</category><description>&lt;h2 id="大模型" class="heading-element">&lt;span>大模型&lt;/span>
+ &lt;a href="#%e5%a4%a7%e6%a8%a1%e5%9e%8b" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h2 id="图像识别" class="heading-element">&lt;span>图像识别&lt;/span>
+ &lt;a href="#%e5%9b%be%e5%83%8f%e8%af%86%e5%88%ab" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;h2 id="数字人" class="heading-element">&lt;span>数字人&lt;/span>
+ &lt;a href="#%e6%95%b0%e5%ad%97%e4%ba%ba" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2></description></item></channel></rss>
